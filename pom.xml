@@ -23,6 +23,7 @@
         <java.version>1.8</java.version>
         <junit.version>4.12</junit.version>
         <mahout.version>0.11.1</mahout.version>
+        <lucene.version>4.6.1</lucene.version>
     </properties>
 
     <dependencyManagement>
@@ -136,6 +137,17 @@
                 <version>${mahout.version}</version>
             </dependency>
 
+            <!-- Lucene -->
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-analyzers-common</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-core</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
             <!--For Utils implementation-->
             <dependency>
                 <groupId>commons-cli</groupId>
